@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Socialglyphs";
+  src: url("fonts/socialglyphs-regular.eot");
+  src: url("fonts/socialglyphs-regular.eot?#iefix") format("embedded-opentype"), url("fonts/socialglyphs-regular.svg#socialglyphs-regular") format("svg"), url("fonts/socialglyphs-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* BASE */
+* {
+  margin: 0; }
+
+html {
+  height: 100%;
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  height: 100%;
+  background-color: #220a7f;
+  color: #fad800;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 0 0; }
+
+::-moz-selection, ::-moz-selection {
+  background: #300eb2;
+  color: #fad800; }
+
+::-moz-selection, ::selection {
+  background: #300eb2;
+  color: #fad800; }
+
+h1 {
+  font-family: "Oswald Light", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: normal; }
+
+a {
+  color: #fad800;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+  a:hover {
+    color: #fad800;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+
+ul, ol {
+  padding: 0 0 0 0;
+  list-style: none; }
+
+/* HOME */
+#home {
+  display: block;
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+  background-color: #220a7f; }
+
+.home__title {
+  width: 100%; }
+  .home__title h1 {
+    font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    line-height: 50vh;
+    margin: 0; }
+
+/* CONTACT */
+#contact {
+  display: block;
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+  background-color: #300eb2;
+  height: 120px; }
+
+.contact__links {
+  width: 90%;
+  margin: 0 auto 10% auto; }
+  @media only screen and (min-width: 540px) {
+    .contact__links {
+      width: 70%; } }
+
+.contact__links__item {
+  float: left;
+  display: block;
+  width: 33.33333%;
+  text-align: center;
+  font-family: "Socialglyphs", sans-serif;
+  color: #fad800;
+  font-size: 4rem;
+  line-height: 100%; }
+  @media only screen and (min-width: 540px) {
+    .contact__links__item {
+      font-size: 6rem; } }
+
+/* PRINT */
+@media print {
+  @page {
+    margin: 0.5cm; }
+
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a, a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group; }
+  tr, img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+  h2, h3 {
+    page-break-after: avoid; } }

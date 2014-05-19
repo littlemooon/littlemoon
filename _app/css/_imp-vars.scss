@@ -1,0 +1,47 @@
+
+//===================================================
+
+// VARS
+
+//===================================================
+
+// colors
+
+$color-light: rgba(250,216,0,1);
+$color-light-alt: rgba(250,216,0,1);
+$color-dark: rgba(34,10,127,1);
+$color-secondary: rgba(48,14,178,1);
+
+//===================================================
+
+// structure
+
+$height-contact: 120px;
+
+//===================================================
+
+// typography
+
+@font-face {
+  font-family: "Socialglyphs";
+  src: url("fonts/socialglyphs-regular.eot");
+  src: url("fonts/socialglyphs-regular.eot?#iefix") format("embedded-opentype"),
+       url("fonts/socialglyphs-regular.svg#socialglyphs-regular") format("svg"), 
+  	   url("fonts/socialglyphs-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-header: "Oswald Light", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; 
+$font-text: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; 
+$font-social: "Socialglyphs", sans-serif; 
+
+//===================================================
+
+// media queries
+
+$break-large: 1026px;
+$break-mid: 768px;
+$break-small: 540px;
+
+//===================================================

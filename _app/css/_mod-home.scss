@@ -1,0 +1,25 @@
+
+// ====================================================
+
+/* HOME */
+
+// ====================================================
+
+#home {
+  display: block;
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+  background-color: $color-dark;
+}
+
+.home__title {
+  width: 100%;
+  h1 {
+    font-family: $font-text;
+    line-height: 50vh;
+    margin: 0;
+  }
+}
+
+//===================================================

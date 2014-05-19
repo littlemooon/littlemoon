@@ -1,0 +1,39 @@
+
+// ====================================================
+
+/* CONTACT */
+
+// ====================================================
+
+
+#contact {
+  display: block;
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+  background-color: $color-secondary;
+  height: $height-contact; 
+}
+
+.contact__links {
+  width: 90%;
+  margin: 0 auto 10% auto;
+  @include breakpoint(baby-bear) {
+    width: 70%;
+  }
+}
+.contact__links__item {
+  float: left;
+  display: block;
+  width: 1/3*100%;
+  text-align: center;
+  font-family: $font-social;
+  color: $color-light;
+  font-size: 4rem;
+  line-height: 100%;
+  @include breakpoint(baby-bear) {
+    font-size: 6rem;
+  }
+}
+
+//===================================================
