@@ -23,8 +23,6 @@ var gulp = require('gulp');
 var sass = require('gulp-sass'),
     prefix = require('gulp-autoprefixer'),
     connect = require('gulp-connect'),
-    concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
     htmlmin = require('gulp-htmlmin');
 
 // paths
@@ -49,11 +47,6 @@ gulp.task('css', function() {
 // concat js
 gulp.task('js', function() {
     gulp.src(app + js + '/*.js')
-        .pipe(gulp.dest(dist + js))
-        .pipe(connect.reload());
-    gulp.src(app + js + '/vendor/*.js')
-        .pipe(concat('vendor.js'))
-        .pipe(uglify())
         .pipe(gulp.dest(dist + js))
         .pipe(connect.reload());
 });
@@ -87,6 +80,7 @@ gulp.task('watch', function() {
 gulp.task('connect', function() {
   connect.server({
     root: dist,
+    port: 9000,
     livereload: true
   });
 });

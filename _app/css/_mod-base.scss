@@ -17,8 +17,8 @@ html {
 }
 body {
   height: 100%;
-  background-color: $color-dark;
-  color: $color-light;
+  background-color: $color-light;
+  color: $color-dark;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
@@ -35,7 +35,7 @@ body {
 
 ::-moz-selection, ::selection {
   background: $color-secondary;
-  color: $color-light;
+  color: $color-dark;
 }
 h1 {
   font-family: $font-header;
@@ -47,11 +47,11 @@ h1 {
 // links
 
 a {
-  color: $color-light;
+  color: $color-dark;
   text-decoration: none;
   transition: all 0.3s ease-out;
   &:hover {
-    color: $color-light-alt;
+    color: $color-secondary;
     text-decoration: none;
     transition: all 0.3s ease-out;
   }

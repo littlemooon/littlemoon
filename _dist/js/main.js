@@ -22,18 +22,10 @@ $(document).ready(function() {
   }
   homePage();
 
-  // bigtext
-
-  function bigText() {
-    $('.home__title').bigtext();
-  }
-  bigText();
-
   // ON RESIZE
 
   $(window).bind('resize', function() {
     homePage();
-    bigText();
   });
   
 });

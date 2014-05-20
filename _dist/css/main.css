@@ -18,8 +18,8 @@ html {
 
 body {
   height: 100%;
-  background-color: #220a7f;
-  color: #fad800;
+  background-color: white;
+  color: #2c3e50;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
@@ -30,24 +30,24 @@ body {
   margin: 0 0 0 0; }
 
 ::-moz-selection, ::-moz-selection {
-  background: #300eb2;
-  color: #fad800; }
+  background: #7f8c8d;
+  color: #2c3e50; }
 
 ::-moz-selection, ::selection {
-  background: #300eb2;
-  color: #fad800; }
+  background: #7f8c8d;
+  color: #2c3e50; }
 
 h1 {
   font-family: "Oswald Light", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: normal; }
 
 a {
-  color: #fad800;
+  color: #2c3e50;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
   a:hover {
-    color: #fad800;
+    color: #7f8c8d;
     text-decoration: none;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
@@ -62,7 +62,7 @@ ul, ol {
   width: 100%;
   clear: both;
   overflow: hidden;
-  background-color: #220a7f; }
+  background-color: white; }
 
 .home__title {
   width: 100%; }
@@ -77,8 +77,9 @@ ul, ol {
   width: 100%;
   clear: both;
   overflow: hidden;
-  background-color: #300eb2;
-  height: 120px; }
+  background-color: white;
+  height: 120px;
+  border-top: 1px solid #2c3e50; }
 
 .contact__links {
   width: 90%;
@@ -93,7 +94,7 @@ ul, ol {
   width: 33.33333%;
   text-align: center;
   font-family: "Socialglyphs", sans-serif;
-  color: #fad800;
+  color: #2c3e50;
   font-size: 4rem;
   line-height: 100%; }
   @media only screen and (min-width: 540px) {
