@@ -7,34 +7,49 @@
 
 
 #contact {
-  display: block;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  clear: both;
-  overflow: hidden;
-  background-color: $color-light;
-  height: $height-contact;
-  border-top: 1px solid $color-dark; 
+  height: $height-social-link * 2;
 }
 
-.contact__links {
-  width: 90%;
-  margin: 0 auto 10% auto;
+.contact__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%
+}
+
+.contact__links__item {
+  width: 33%;
+  height: $height-social-link;
+  font-family: $font-social;
+  font-size: $height-social-link * 5/6;
+  text-align: center;
+  line-height: 100%;
+  padding: $height-social-link * 5/6 0 $height-social-link * 1/6 0;
+  color: $color-dark;
+  transition: all 0.3s ease-out;
+  &:hover {
+    padding-top: 0;
+  }
   @include breakpoint(baby-bear) {
-    width: 70%;
+    font-size: $height-social-link;
+    width: 25%;
+  }
+  @include breakpoint(papa-bear) {
+    width: 15%;
   }
 }
-.contact__links__item {
-  float: left;
-  display: block;
-  width: 1/3*100%;
-  text-align: center;
-  font-family: $font-social;
-  color: $color-dark;
-  font-size: 4rem;
-  line-height: 100%;
-  @include breakpoint(baby-bear) {
-    font-size: 6rem;
-  }
+.twitter:hover {
+  color: #55ACEE;
+}
+.google:hover {
+  color: #DD4B39;
+}
+.github:hover {
+  color: #4183C4;
 }
 
 //===================================================

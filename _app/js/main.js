@@ -12,15 +12,15 @@ $(document).ready(function() {
   // ON WINDOW LOAD
 
   $(window).load(function() {
-    $(window).trigger('resize');
+    $(".title__moon").removeClass("preload");
   });
 
   // home page
 
   function homePage() {
-    $('#home').css("min-height", $(window).height()-120);
+    $('#title').css("min-height", $(window).height()-$('#contact').height());
   }
-  homePage();
+  // homePage();
 
   // ON RESIZE
 

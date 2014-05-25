@@ -39,7 +39,7 @@ var js = '/js';
 gulp.task('css', function() {
     gulp.src(app + css + '/*.scss')
         .pipe(sass())
-        .pipe(prefix(["last 1 version", "> 1%", "ie 8", "ie 7"], { cascade: true }))
+        .pipe(prefix(["last 2 versions", "> 1%", "ie 8", "ie 7"], { cascade: true }))
         .pipe(gulp.dest(dist + css))
         .pipe(connect.reload());
 });
