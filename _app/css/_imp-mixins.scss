@@ -26,7 +26,7 @@
     background-color: $color-big;
     transition: all 0.3s ease-out;
   }
-  &:hover > *:first-child {
+  &:hover > *:first-child, &:focus > *:first-child {
     background-color: $color-moon;
   }
   & > *:nth-child(2) {

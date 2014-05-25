@@ -34,7 +34,8 @@
   transition: all 0.3s ease-out;
   @include breakpoint(baby-bear) {
     width: 25%;
-    &:hover {
+    font-size: $social-height;
+    &:hover, &:focus {
       padding: 0 0 $social-height * $social-factor 0;
     }
   }
@@ -42,13 +43,13 @@
     width: 15%;
   }
 }
-.twitter:hover {
+.twitter:hover, .twitter:focus {
   color: #55ACEE;
 }
-.google:hover {
+.google:hover, .google:focus {
   color: #DD4B39;
 }
-.github:hover {
+.github:hover, .github:focus {
   color: #4183C4;
 }
 
