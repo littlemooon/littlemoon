@@ -32,12 +32,12 @@
   padding: $social-height * $social-factor 0 0 0;
   color: $color-dark;
   transition: all 0.3s ease-out;
-  &:hover {
-    padding: 0 0 $social-height * $social-factor 0;
-  }
   @include breakpoint(baby-bear) {
     font-size: $social-height;
     width: 25%;
+    &:hover {
+      padding: 0 0 $social-height * $social-factor 0;
+    }
   }
   @include breakpoint(papa-bear) {
     width: 15%;
