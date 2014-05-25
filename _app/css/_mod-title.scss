@@ -21,7 +21,6 @@
   width: 100%;
   margin: 1em 0 $social-height*3/2 0;
   background-color: $color-light;
-  transition: all 0.3s ease-out;
   @include breakpoint(baby-bear) {
     flex-direction: row;
     height: $moon;

@@ -3,7 +3,7 @@
 // OVERVIEW
 //======================================================
 
-// gulp compiles sass, runs autoprefixer, watches 
+// gulp compiles sass, runs autoprefixer, concats js, watches 
 // for changes and serves with livereload... simple
  
 // DISCLAIMER
@@ -22,14 +22,13 @@ var gulp = require('gulp');
 // plugins
 var sass = require('gulp-sass'),
     prefix = require('gulp-autoprefixer'),
-    connect = require('gulp-connect'),
-    htmlmin = require('gulp-htmlmin');
+    connect = require('gulp-connect');
 
 // paths
-var app = './_app';
-var dist = './_dist';
-var css = '/css';
-var js = '/js';
+var app = './_app',
+    dist = './_dist',
+    css = '/css',
+    js = '/js';
 
 //======================================================
 // PROCESS
@@ -54,10 +53,6 @@ gulp.task('js', function() {
 // move other files
 gulp.task('move', function () {
     gulp.src(app + '/*.{txt,html,ico}')
-        .pipe(gulp.dest(dist))
-        .pipe(connect.reload());
-    gulp.src(app + '/404.html')
-        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(dist))
         .pipe(connect.reload());
     gulp.src(app + css + '/fonts/*')

@@ -33,7 +33,6 @@
   color: $color-dark;
   transition: all 0.3s ease-out;
   @include breakpoint(baby-bear) {
-    font-size: $social-height;
     width: 25%;
     &:hover {
       padding: 0 0 $social-height * $social-factor 0;
