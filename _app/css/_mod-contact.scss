@@ -7,10 +7,11 @@
 
 
 #contact {
+  @include clearfix();
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: $height-social-link * 2;
+  height: $social-height * ($social-factor * 2);
 }
 
 .contact__inner {
@@ -23,19 +24,19 @@
 
 .contact__links__item {
   width: 33%;
-  height: $height-social-link;
+  height: $social-height;
   font-family: $font-social;
-  font-size: $height-social-link * 5/6;
+  font-size: $social-height * $social-factor;
   text-align: center;
   line-height: 100%;
-  padding: $height-social-link * 5/6 0 $height-social-link * 1/6 0;
+  padding: $social-height * $social-factor 0 0 0;
   color: $color-dark;
   transition: all 0.3s ease-out;
   &:hover {
-    padding-top: 0;
+    padding: 0 0 $social-height * $social-factor 0;
   }
   @include breakpoint(baby-bear) {
-    font-size: $height-social-link;
+    font-size: $social-height;
     width: 25%;
   }
   @include breakpoint(papa-bear) {

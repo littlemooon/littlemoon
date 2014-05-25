@@ -19,7 +19,7 @@
   align-items: center;
   height: $moon*2;
   width: 100%;
-  margin: 1em 0 $height-social-link*3/2 0;
+  margin: 1em 0 $social-height*3/2 0;
   background-color: $color-light;
   transition: all 0.3s ease-out;
   @include breakpoint(baby-bear) {
