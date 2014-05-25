@@ -1,7 +1,15 @@
 {
   "name": "littlemoon",
   "version": "0.1.0",
-  "dependencies": {},
+  "author": "fred wright",
+  "description": "littlemoon design + development",
+  "main": "app.js",
+  "scripts": {
+    "test": "foreman start"
+  },
+  "dependencies": {
+    "express": "~3.4.7"
+  },
   "devDependencies": {
     "gulp-util": "~2.2.14",
     "gulp": "~3.5.2",
@@ -15,5 +23,8 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:fredwright/littlemoon.git"
+  },
+  "engines": {
+    "node": "0.10.x"
   }
 }
