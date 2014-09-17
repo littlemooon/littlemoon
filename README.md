@@ -7,4 +7,3 @@ small static site using:
 	gulp
 	bem naming
 	responsive design
-	node

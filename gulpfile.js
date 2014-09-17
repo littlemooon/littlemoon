@@ -1,20 +1,7 @@
 
 //======================================================
-// OVERVIEW
-//======================================================
 
-// gulp compiles sass, runs autoprefixer, concats js, watches 
-// for changes and serves with livereload... simple
- 
-// DISCLAIMER
-
-// clearly, this process does not concatenate/minify css or js
-// this is meant for display purposes only 
-// and would not be the case on a production site
-
-//======================================================
 // SETUP
-//======================================================
 
 // gulp
 var gulp = require('gulp'); 
@@ -25,14 +12,14 @@ var sass = require('gulp-sass'),
     connect = require('gulp-connect');
 
 // paths
-var app = './_app',
-    dist = './_dist',
+var app = './app',
+    dist = './dist',
     css = '/css',
     js = '/js';
 
 //======================================================
+
 // PROCESS
-//======================================================
 
 // compile scss and autoprefix
 gulp.task('css', function() {
@@ -61,8 +48,8 @@ gulp.task('move', function () {
 });
 
 //======================================================
+
 // SERVE
-//======================================================
 
 // watch
 gulp.task('watch', function() {
@@ -82,3 +69,5 @@ gulp.task('connect', function() {
 
 // default
 gulp.task('default', [ 'css', 'js', 'move', 'watch', 'connect' ]);
+
+//======================================================
