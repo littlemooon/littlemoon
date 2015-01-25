@@ -9,7 +9,9 @@ block prepend title
 
 block header
   h1= page.title
-  p= page.description
+    a(href=page.metadata.repo).social.github j
+    a(href='https://twitter.com/littlemooon').social.twitter t
+  p= page.metadata.description
 
 block content
   article

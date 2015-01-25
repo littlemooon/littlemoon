@@ -2,9 +2,7 @@ $color-light = #f8f8f8
 $color-dark = #2c3e50
 $color-moon = #eab700
 
-$color-background = $color-light
-$color-text = $color-dark
-$color-text-hover = $color-moon
+$moon-size = 2em
 
 html
   font-family $font-text
@@ -12,27 +10,35 @@ html
   
 body
   line-height 1.5
-  background-color $color-background
+  background-color $color-light
   text-rendering optimizeLegibility
-  color $color-text
+  color $color-dark
   margin 0
   & > *
-    width 50%
-    margin 0 auto
     clearfix()
+    margin 0 auto
+    width 90%
+    @media screen and (min-width: 600px)
+      width 80%
+    @media screen and (min-width: 800px)
+      width 70%
+    @media screen and (min-width: 1000px)
+      width 60%
+    @media screen and (min-width: 1200px)
+      width 50%
   & > header
-    margin-top 6em
-    margin-bottom 4em
+    margin-top 8em
+    margin-bottom 6em
     p
       margin 0
   & > footer
-    margin 4em auto
+    margin 6em auto
     text-align center
     font-size 0.7em
     font-style italic
 
 h1
-  font-family $font-header
+  font-family $font-text
   font-weight normal
   margin 0
   font-size 3em
@@ -45,32 +51,37 @@ h3
   margin-top 1.5em
 
 a
-  color $color-text
+  color $color-dark
 
+.social
+  float right
+  font-family $font-social
+  font-size 0.7em
+  text-decoration none
+  footer &
+    float none
+    font-size 2.5em
+    font-style normal
 
-
-$size = 2em
-
+.twitter:hover, .twitter:active, .twitter:focus
+  color #55ACEE
+  
+.github:hover, .github:active, .github:focus
+  color #4183C4
+  
 .moon
   float left
   position relative
-  width $size
-  height $size
-  margin (5/4)em 2em (5/4)em 0
+  width $moon-size
+  height $moon-size
+  margin (5/4)em 2em (5/4)em (5/4)em
   border-radius 50%
-  border 1px solid #2c3e50
+  background-color $color-moon
   &::after
     content ""
     position absolute
-    left ($size/2)
-    width ($size/2)
-    height ($size/2)
+    left ($moon-size/2)
+    width ($moon-size/2)
+    height ($moon-size/2)
     border-radius 50%
-    border 1px solid #2c3e50
-    background-color $color-background
-    transition 0.3s all
-  &:hover::after
-    width $size
-    height $size
-    left -1px
-    top -1px
+    background-color $color-light

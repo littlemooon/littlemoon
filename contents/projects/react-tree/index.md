@@ -1,6 +1,7 @@
 ---
 title: React-Tree
 description: Provide a component, render a tree
+repo: https://github.com/littlemooon/react-tree
 author: fred-wright
 date: 2015-01-25
 template: project.jade
