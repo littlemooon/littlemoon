@@ -1,9 +1,4 @@
-littlemoon
-==========
 
-small static site using:
+# Blog
 
-	sass
-	gulp
-	bem naming
-	responsive design
+The default [wintersmith](https://github.com/jnordberg/wintersmith) template
