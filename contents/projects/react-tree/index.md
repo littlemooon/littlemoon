@@ -7,53 +7,56 @@ date: 2015-01-25
 template: project.jade
 ---
 
-Syntax highlighting with [highlight.js](http://softwaremaniacs.org/soft/highlight/en/).
-The theme used is tomorrow, you can find more themes [here](http://jmblog.github.io/color-themes-for-highlightjs/).
+How many generic 'list' components have you created? This is yet another. 
+
+The aim is to provide a highly reusable API for rendering data in list and tree structures. Provide a component and an array and we're off...
 
 <span class="more"></span>
 
-### JavaScript
+### 1 Lists - the simple case
+
+A simple list is the most basic use case. We have all looped through data, rendering a view for each item, before.
+
+Supply the array and the view to the React-Tree component:
 
 ```javascript
-/*
- * Component to render for each node
- */
-var CollapsableTreeItem = React.createClass({
+var data = ['apple', 'orange', 'banana'];
+
+var ListOfFruit = React.createClass({
   render: function() {
-    var p = this.props;
-    var d = p.data;
-    var node = null;
-    var collapse = null;
+    return <Tree nodes = {data} component = {Fruit}/>;
+  }
+});
 
-    // if we are collapsable create a button
-    if(p.collapsable) {
-      collapse = (
-        <button 
-          className = 'collapse'
-          onClick = {p.onCollapse}>
-          {p.collapsed? '+' : '-'}
-        </button>
-      );
-    }
+var Fruit = React.createClass({
+  render: function() {
+    return <p>{this.props.data}</p>;
+  }
+});
+```
 
-    if(p.collapsed) {
-      node = (
-        <div>
-          <h3>{d.name} {collapse}</h3>
-          
-        </div>
-      );
-    } else {
-      node = (
-        <div>
-          <h3>{d.name} {collapse}</h3>
-          
-          <p>{d.quote}</p>
-        </div>
-      );
-    }
+... and you will be blessed with a list of that data:
 
-    return node;
+<div class='example'/><div><p>apple</p></div><div><p>orange</p></div><div><p>banana</p></div></div>
+
+### 2 Trees - this is getting exciting
+
+The data for each item in the list is accessible via 'props.data'. This is the case no matter what type of objects the array contains.
+
+If we provide it with a list of objects that themselves contain a list of child objects of the same type we contruct a nested tree of components:
+
+```javascript
+var data = ['apple', 'orange', 'banana'];
+
+var ListOfFruit = React.createClass({
+  render: function() {
+    return <Tree nodes = {data} component = {Fruit}/>;
+  }
+});
+
+var Fruit = React.createClass({
+  render: function() {
+    return <p>{this.props.data}</p>;
   }
 });
 ```
