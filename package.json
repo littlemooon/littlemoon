@@ -3,10 +3,17 @@
   "version": "0.1.0",
   "author": "fred wright",
   "description": "littlemoon design + development",
+  "scripts": {
+    "build": "wintersmith build",
+    "dev": "wintersmith preview",
+    "start": "serve ./build --single"
+  },
   "dependencies": {
     "moment": "2.3.x",
-    "underscore": "1.4.x",
-    "typogr": "0.5.x"
+    "serve": "^5.1.2",
+    "typogr": "0.5.x",
+    "uglify-js": "^2.8.21",
+    "underscore": "1.4.x"
   },
   "repository": {
     "type": "git",
@@ -15,5 +22,8 @@
   "devDependencies": {
     "wintersmith": "^2.1.0",
     "wintersmith-stylus": "^0.4.1"
+  },
+  "engines": {
+    "node": "7.6.0"
   }
 }
