@@ -3,7 +3,7 @@
 
 Personal brand website and blog thing
 
-![screenshot-2017-11-27 littlemoon](https://user-images.githubusercontent.com/2467416/33268452-989ad2c4-d37d-11e7-85bb-a9085f1913b8.png)
+![screenshot-2017-11-27 littlemoon 1](https://user-images.githubusercontent.com/2467416/33268683-6c69a8f0-d37e-11e7-9eeb-240fe0a58ffa.png)
 
 ### scripts
 
