@@ -1,12 +1,13 @@
 {
   "name": "littlemoon",
-  "version": "0.1.0",
-  "author": "fred wright",
+  "license": "MIT",
+  "author": "fredwright0@gmail.com",
   "description": "littlemoon design + development",
   "scripts": {
     "build": "wintersmith build",
     "dev": "wintersmith preview",
-    "start": "serve ./build --single"
+    "start": "serve ./build --single",
+    "deploy": "now && now alias"
   },
   "dependencies": {
     "moment": "2.3.x",
@@ -17,13 +18,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:littlemooon/littlemoon.git"
+    "url": "https://github.com/littlemooon/littlemoon"
   },
   "devDependencies": {
     "wintersmith": "^2.1.0",
     "wintersmith-stylus": "^0.4.1"
   },
-  "engines": {
-    "node": "7.6.0"
+  "now": {
+    "alias": "littlemoon.io"
   }
 }
