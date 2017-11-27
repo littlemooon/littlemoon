@@ -1,5 +1,6 @@
 {
   "name": "littlemoon",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "fredwright0@gmail.com",
   "description": "littlemoon design + development",
@@ -10,11 +11,11 @@
     "deploy": "now && now alias"
   },
   "dependencies": {
-    "moment": "2.3.x",
-    "serve": "^5.1.2",
-    "typogr": "0.5.x",
-    "uglify-js": "^2.8.21",
-    "underscore": "1.4.x"
+    "moment": "^2.19.2",
+    "serve": "^6.4.1",
+    "typogr": "^0.6.7",
+    "uglify-js": "^3.2.0",
+    "underscore": "^1.8.3"
   },
   "repository": {
     "type": "git",
